@@ -38,45 +38,135 @@
                     <option value="2">Francia</option>
                     <option value="2">Inglaterra</option>
                     <option value="2">EEUU</option>
+                    </select>
                 </td>
-                <td><p>Nacionalidad:*</p></td>
-                <td><p>Segunda nacionalidad:</p></td>
-                <td><p>Pais Residencia Fiscal:*</p></td>
+                <td><p>Nacionalidad:*</p><select name="menu">
+                        <option value="1">España</option>
+                        <option value="2">Francia</option>
+                        <option value="2">India</option>
+                        <option value="2">EEUU</option>
+                        </select>
+                </td>
+                <td><p>Segunda nacionalidad:</p><select name="menu">
+                        <option value="1">España</option>
+                        <option value="2">Francia</option>
+                        <option value="2">India</option>
+                        <option value="2">EEUU</option>
+                        </select></td>
+                <td><p>Pais Residencia Fiscal:*</p><select name="menu">
+                        <option value="1">España</option>
+                        <option value="2">Francia</option>
+                        <option value="2">India</option>
+                        <option value="2">EEUU</option>
+                        </select></td>
         </tr>
         <tr>
-            <td><p>Trabajo:*</p></td>
-            <td><p>Tipo de Actividad:*</p></td>
-            <td><p>Sector Profesional:*</p></td>
-            <td><p>Empresa:*</p></td>
+            <td><input type="checkbox" name="casilla">Tengo mas de una residencia fiscal</td>
         </tr>
         <tr>
-            <td><p>Proposito de la cuenta:*</p></td>
-            <td><p>Origen de sus ahorros:*</p></td>
+            <td><p>Trabajo:*</p><select name="menu">
+                    <option value="1">No trabaja</option>
+                    <option value="2">Por cuenta Ajena</option>
+                    <option value="2">Por Cuenta Propia</option>
+                    
+                    </select></td>
+            <td><p>Tipo de Actividad:*</p><select name="menu">
+                    <option value="1">Tarea Hogar</option>
+                    <option value="2">Estudiante</option>
+                    <option value="2">Desempleado</option>
+                    <option value="2">Jubilado</option>
+                    <option value="2">Pensionista</option>
+                    </select></td>
+            <td><p>Sector Profesional:*</p><select name="menu">
+                    <option value="1">No trabaja</option>
+                    <option value="2">Banca</option>
+                    <option value="2">Construccion</option>
+                    <option value="2">Energia</option>
+                    <option value="2">Industria</option>
+                    <option value="2">Recursos Humanos</option>
+                    <option value="2">Servicios</option>
+                    </select></td>
+            <td><p>Empresa:*</p>
+                <input type="text" name="nombre" required></td>
         </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <tr>
+            <td><p>Proposito de la cuenta:*</p>
+                <select name="menu">
+                        <option value="1">Domiciliar mi nomina</option>
+                        <option value="2">Gestion de mi empresa</option>
+                        <option value="2">Ahorros</option>
+                        <option value="2">Fondos, planes, bolsas</option>
+                        <option value="2">Obtener Financiacion</option>
+                        </select></td>
+            <td><p>Origen de sus ahorros:*</p><select name="menu">
+                    <option value="1">Mi nomina, pension o prestacion por desempleo</option>
+                    <option value="2">Mi empresa o negocio</option>
+                    <option value="2">Rentas Immobiliarias</option>
+                    <option value="2">Rentas de capital</option>
+                    <option value="2">Prestaciones sociales</option>
+                    </select></td>
+        </tr>
     
     </table>
+    <table>
+        <tr>
+            <td><p>Tipo de Via</p>
+                <select name="menu">
+                        <option value="1">Calle</option>
+                        <option value="2">Apartado</option>
+                        <option value="2">Avenida</option>
+                        <option value="2">Bajada</option>
+                        <option value="2">Barrio</option>
+                        </select></td>
+            <td colspan="2"><p>Dirección</p>
+                <input type="text" name="nombre" required></td>
+            <td><p>Numero:*</p>
+                <input type="number" name="numero"></td>
+            <td><p>Piso</p>
+                <input type="number" name="numero"></td>
+
+        </tr>
+        <tr>
+            <td><p>Urb./Pol./Otros</p>
+                <input type="text" name="nombre" required></td>
+            <td><p>Localidad*</p>
+                <input type="text" name="nombre" required></td>
+            <td><p>Provincia*</p>
+                <select name="menu">
+                        <option value="1">A Coruña</option>
+                        <option value="2">Almeria</option>
+                        <option value="2">Madrid</option>
+                        <option value="2">Valencia</option>
+                        <option value="2">Castellon</option>
+                        </select></td>
+            <td><p>Codigo Postal*</p>
+                <input type="number" name="numero"></td>
+        </tr>
+        <tr>
+            <td><p>Telefono Movil*</p>
+                <input type="number" name="numero"></td>
+            <td><p>Telefono Particular</p>
+                <input type="number" name="numero"></td>
+            <td><p>Direccion de e-mail*</p>
+                <input type="text" name="nombre" required></td>
+        </tr>
+
+    </table>
+
+<hr>
+<p>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad:</p>
+<input type="checkbox" name="casilla">Plan de Pensiones
+<input type="checkbox" name="casilla">Fondos
+<input type="checkbox" name="casilla">Acciones
+<input type="checkbox" name="casilla">Hipoteca
+<input type="checkbox" name="casilla">Prestamo
+<input type="checkbox" name="casilla">Seguro de Vida
+<hr>
+<p>Puede consultar en nuestra Web o solicitarnos toda la Información</p>
+<p>Precontractual de nuestros productos. Al pulsar "Continuar" está</p>
+<p>aceptando la Cláusula de Protección de datos.</p>
+<br>
+<p>(*) Los campos marcados con asterisco son obligatorios.</p>
 </form>
 </main>
     
